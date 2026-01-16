@@ -1,0 +1,14 @@
+# --- Ambientes Virtuais e Sistema ---
+.venv/
+__pycache__/
+.vscode/
+
+# --- Dados ---
+data/
+*.parquet
+*.csv
+*.xlsx
+
+# --- Configurações Sensíveis ---
+.env
+.DS_Store
