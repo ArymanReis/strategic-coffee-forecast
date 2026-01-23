@@ -1,6 +1,5 @@
 # ☕ Strategic Coffee Forecast: Inteligência de Dados para Commodities
 
-![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Focus](https://img.shields.io/badge/Business-Agro%20%7C%20Finance-darkgreen?style=for-the-badge)
 ![Libs](https://img.shields.io/badge/Lib-Pandas%20%7C%20Seaborn%20%7C%20Statsmodels-orange?style=for-the-badge)
