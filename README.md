@@ -132,7 +132,7 @@ Antes de escrever a primeira linha de código, o projeto foi desenhado no papel.
 Acreditamos que a tecnologia é apenas o meio para resolver problemas de negócio bem definidos. A imagem abaixo registra o planejamento inicial das perguntas estratégicas:
 
 <div align="center">
-  <img src="img/caderno_rascunho.jpg" alt="Rascunho do Planejamento" width="600">
+  <img src="img/caderno_rascunho.jpeg" alt="Rascunho do Planejamento" width="600">
   <p><em>"Do Rascunho ao Deploy: O roteiro de perguntas que guiou a análise."</em></p>
 </div>
 
