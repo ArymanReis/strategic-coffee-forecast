@@ -1,4 +1,5 @@
-# ☕ Strategic Coffee Forecast: Inteligência de Dados para Commodities
+# ☕ Strategic Coffee Forecast  
+### Inteligência de Dados aplicada à tomada de decisão em Commodities
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Focus](https://img.shields.io/badge/Business-Agro%20%7C%20Finance-darkgreen?style=for-the-badge)
@@ -6,142 +7,165 @@
 
 ---
 
-## 💼 O Cenário de Negócio (The Business Case)
+## 💼 Contexto de Negócio
 
-> *"No mercado de commodities, o lucro não está apenas na venda, mas na eficiência da compra."*
+> *No mercado de commodities, o resultado financeiro não depende apenas da venda, mas principalmente do **timing da compra***.
 
-Grandes compradores de café (indústrias, redes de franquias e exportadores) enfrentam um dilema financeiro constante: **A Volatilidade**.
-Uma decisão de compra tomada no momento errado, influenciada por falsas percepções cambiais (Dólar) ou desconhecimento dos ciclos de safra, pode resultar em prejuízos milionários em estoque.
+Empresas que dependem da aquisição de café (indústrias, exportadores e grandes redes) enfrentam um desafio recorrente: **alta volatilidade de preços**.  
+Decisões de compra baseadas apenas em percepção de mercado ou variação cambial podem gerar **impactos financeiros significativos no estoque**.
 
-### 🎯 O Objetivo
-Este projeto foi desenvolvido para responder a uma pergunta de 1 milhão de reais:
-**"Como usar dados históricos para prever a melhor janela de compra e mitigar riscos de mercado?"**
-
-Minha missão foi transformar 5 anos de dados brutos da bolsa (B3/Nyse) em uma **estratégia de aquisição** baseada em 3 pilares:
-1.  📉 **Redução de Custo:** Identificar a sazonalidade exata (o mês mais barato e seguro).
-2.  💵 **Inteligência Macro:** Separar o que é inflação do Dólar vs. escassez real do grão.
-3.  🔮 **Previsibilidade:** Projetar o preço futuro (Forecast) para apoio à decisão de curto prazo.
+Este projeto utiliza **dados históricos de mercado** para transformar incerteza em **apoio analítico à decisão**.
 
 ---
 
-## 🗺️ O Mapa da Investigação (Business Questions)
+## 🎯 Objetivo do Projeto
 
-Para garantir que a análise gerasse valor real, o projeto foi guiado por **8 Perguntas Estratégicas** divididas em 3 pilares de decisão:
+Responder de forma orientada a dados à seguinte pergunta de negócio:
 
-### 📊 Pilar 1: Comportamento & Risco (Entendendo o Mercado)
-* **P1.** Qual o preço histórico real da saca em Reais (BRL) para o produtor?
-* **P2.** Existe correlação direta entre o aumento do Arábica e do Robusta?
-* **P3.** Qual espécie é mais volátil (arriscada) para se investir?
-* **P4.** O "Spread" (diferença de preço) entre as espécies está aumentando?
+> **“Como utilizar dados históricos para identificar a melhor janela de compra e reduzir riscos financeiros?”**
 
-### 🗓️ Pilar 2: Estratégia Sazonal (O Timing da Compra)
-* **P5.** Historicamente, qual é o melhor mês para comprar (Janela de Ouro)?
+Para isso, o projeto se apoia em três pilares analíticos:
 
-### 💵 Pilar 3: Macroeconomia & Futuro (Cenários)
-* **P6.** O preço sobe por escassez real ou apenas por variação do Dólar?
-* **P7.** Quando o Dólar sobe, o preço da saca obrigatoriamente aumenta?
-* **P8.** Qual é a previsão de preço para os próximos 30 dias (Forecast)?
+1. 📉 **Redução de custos:** identificação de padrões sazonais de preço  
+2. 💵 **Análise macroeconômica:** separação entre efeito cambial e escassez real  
+3. 🔮 **Previsibilidade:** projeção de curto prazo para apoio tático à decisão  
 
 ---
 
-### 📉 Insights do Pilar 1: Comportamento & Risco
+## 🗺️ Perguntas de Negócio Investigadas
 
-**1. O Patamar Histórico de Preços (Resposta à P1)**
-A análise da evolução diária (em BRL) revelou que não estamos em um crescimento linear, mas em um "Rally" de preços sem precedentes recentes.
-* **O Fato:** O Café Arábica atingiu o pico de **R$ 3.346,58** (Fev/2025), enquanto o Robusta rompeu pela primeira vez a barreira dos **R$ 2.022,53** (Mar/2025).
-* **A Conclusão:** O preço para o produtor efetivamente **dobrou** em comparação à média de 2021-2023, exigindo uma rekalibragem imediata do orçamento de compras da indústria.
+A análise foi guiada por **8 perguntas estratégicas**, organizadas em três eixos:
+
+### 📊 Pilar 1 — Comportamento & Risco
+- **P1.** Qual o preço histórico real da saca em BRL?
+- **P2.** Existe correlação entre Arábica e Robusta?
+- **P3.** Qual espécie apresenta maior volatilidade?
+- **P4.** O spread entre as espécies está se ampliando?
+
+### 🗓️ Pilar 2 — Estratégia Sazonal
+- **P5.** Qual o melhor mês histórico para compra?
+
+### 💵 Pilar 3 — Macroeconomia & Previsão
+- **P6.** A alta de preços é cambial ou estrutural?
+- **P7.** O dólar influencia diretamente o preço da saca?
+- **P8.** Qual a projeção de preço para os próximos 30 dias?
+
+---
+
+## 📉 Insights — Pilar 1: Comportamento & Risco
+
+### 1️⃣ Evolução Histórica de Preços (P1)
+
+📌 **Pergunta:** O preço do café segue uma tendência linear ou estrutural?  
+💡 **Insight:** O mercado entrou em um **rally histórico**, rompendo patamares inéditos.
+
+- Arábica: **R$ 3.346,58 (Fev/2025)**
+- Robusta: **R$ 2.022,53 (Mar/2025)**
+
+➡️ **Impacto prático:** O custo médio da matéria-prima praticamente dobrou em relação a 2021–2023, exigindo revisão orçamentária.
 
 ![Evolução de Preços](img/fig01_evolucao_precos.png)
 
-**2. A Dinâmica de Correlação (Resposta à P2)**
-Muitos gestores tentam fazer *hedge* (proteção) operando as duas pontas, mas a Matriz de Correlação de Pearson revelou um coeficiente de **0.71**.
-* **O Insight:** Existe uma **Forte Correlação Positiva**. Os preços de Arábica e Robusta caminham juntos na maior parte do tempo. Isso significa que não é possível diversificar o risco apenas comprando a outra espécie; se o mercado sobe, ele sobe em bloco.
+---
+
+### 2️⃣ Correlação entre Espécies (P2)
+
+📌 **Pergunta:** É possível reduzir risco alternando entre Arábica e Robusta?  
+💡 **Insight:** Correlação positiva forte (**0,71**).
+
+➡️ **Impacto prático:** Comprar a outra espécie **não elimina risco**, pois os preços se movem juntos.
 
 ![Matriz de Correlação](img/fig04_Matriz_de_Correlacao.png)
 
-**3. Quem é o Vilão do Risco? (Resposta à P3)**
-Ao calcularmos a *Volatilidade Anualizada* dos ativos, quantificamos o risco de exposição de cada espécie.
-* **O Resultado:** O **Arábica (38.0%)** provou ser um ativo consideravelmente mais volátil que o **Robusta (33.6%)**.
-* **Impacto no Negócio:** Contratos baseados puramente em Arábica exigem uma margem de segurança financeira maior devido à oscilação agressiva de preços.
+---
+
+### 3️⃣ Volatilidade Comparada (P3)
+
+📌 **Pergunta:** Qual espécie apresenta maior risco financeiro?  
+💡 **Insight:**  
+- Arábica: **38,0%**
+- Robusta: **33,6%**
+
+➡️ **Impacto prático:** Contratos baseados em Arábica exigem maior margem de segurança.
 
 ![Volatilidade Comparada](img/fig03_Volatilidade.png)
 
-**4. O Spread e o Custo de Oportunidade (Resposta à P4)**
-O gráfico de "Spread" monitora a diferença de preço entre a saca de Arábica e a de Robusta.
-* **O Alerta Crítico:** Em Dezembro/2025, o spread atingiu sua máxima histórica de **R$ 1.608,31**.
-* **A Consequência:** Com o prêmio de qualidade do Arábica tão alto, a indústria é forçada a alterar o *blend*, consumindo mais Robusta para manter a margem. Esse movimento de substituição explica a pressão de compra recente sobre o Robusta.
+---
+
+### 4️⃣ Análise de Spread (P4)
+
+📌 **Pergunta:** O diferencial de preço entre espécies está se ampliando?  
+💡 **Insight:** Spread recorde de **R$ 1.608,31 (Dez/2025)**.
+
+➡️ **Impacto prático:** Pressão para substituição parcial por Robusta, afetando demanda e preços.
 
 ![Spread de Preços](img/fig02_Premio_de_Qualidade.png)
 
 ---
 
-### 🗓️ Insights do Pilar 2: Estratégia Sazonal
+## 🗓️ Insights — Pilar 2: Estratégia Sazonal
 
-**5. A Janela de Ouro de Compra (Resposta à P5)**
-A análise de sazonalidade (Boxplot Mensal) quebrou o paradigma de que "comprar na safra (Julho) é sempre melhor".
-* **O Risco da Safra:** Julho apresenta médias baixas, mas alta amplitude de variação (risco de geadas e quebra de safra), o que torna o planejamento financeiro incerto.
-* **A Descoberta:** Identificamos **Março** como o mês estratégico. Ele combina preços competitivos com a **menor dispersão do ano** (caixa compacta).
-* **Decisão:** Comprar em Março garante previsibilidade orçamentária, evitando a exposição à volatilidade do segundo semestre.
+### 5️⃣ Janela Ótima de Compra (P5)
+
+📌 **Pergunta:** Comprar na safra é sempre a melhor opção?  
+💡 **Insight:** Março apresenta **menor dispersão de preços**, mesmo sem ser mês de safra.
+
+➡️ **Decisão:** Março oferece maior previsibilidade orçamentária.
 
 ![Sazonalidade Mensal](img/fig05_sazonalidade.png)
 
 ---
 
-### 💵 Insights do Pilar 3: Macroeconomia & Futuro
+## 💵 Insights — Pilar 3: Macroeconomia & Previsão
 
-**6. O Mito do Dólar (Resposta às P6 e P7)**
-Uma hipótese comum era de que a alta do café seria puramente cambial. Para testar isso, normalizamos os preços em "Base 100" (jan/2021 = 100) para comparar a valorização relativa.
-* **O Veredito:** O gráfico mostra um descolamento agressivo. Enquanto o Dólar (Linha Azul Tracejada) permaneceu estável, o preço do Robusta (Linha Vermelha) valorizou mais de **350%** e o Arábica **300%**.
-* **Conclusão:** O aumento de preço é **Real (Estrutural)**, causado por escassez de oferta global, e não por desvalorização da moeda brasileira.
+### 6️⃣ Efeito Cambial vs Escassez Real (P6 & P7)
+
+📌 **Pergunta:** A alta é causada pelo dólar?  
+💡 **Insight:** Não. O preço do café cresce muito acima da variação cambial.
+
+➡️ **Impacto prático:** A valorização é **estrutural**, ligada à oferta global.
 
 ![Macroeconomia](img/fig06_macroeconomia.png)
 
-**7. O Futuro: Forecast de 30 Dias (Resposta à P8)**
-Utilizando o modelo estatístico **Holt-Winters (Suavização Exponencial)**, projetamos o cenário para o próximo mês para apoiar a decisão de curto prazo.
-* **Tendência:** O modelo aponta para uma **Estabilidade Lateral**. O "pico" de alta perdeu força, mas não há sinal de queda brusca.
-* **O Preço Alvo:** A previsão central gira em torno de **R$ 2.524,00**.
-* **Gestão de Risco:** Calculamos um intervalo de confiança (95%) onde o preço pode flutuar entre **R$ 2.057 (Piso)** e **R$ 2.990 (Teto)**.
+---
+
+### 7️⃣ Forecast de Curto Prazo (P8)
+
+📌 **Pergunta:** O que esperar no próximo mês?  
+💡 **Insight:** Estabilidade lateral.
+
+- Preço estimado: **R$ 2.524**
+- Intervalo (95%): **R$ 2.057 – R$ 2.990**
+
+➡️ **Uso prático:** Apoio tático à decisão de compra.
 
 ![Forecast 30 Dias](img/fig07_forecast.png)
 
 ---
 
 ## 🛠️ Stack Tecnológico
-* **Linguagem:** Python 3.10
-* **Análise & Manipulação:** Pandas, NumPy
-* **Visualização:** Seaborn, Matplotlib
-* **Estatística & ML:** Statsmodels (Holt-Winters), Scipy
-* **Fonte de Dados:** Yahoo Finance (Agregador)
-   * *Arábica:* ICE Futures U.S. (Nova York)
-   * *Robusta:* ICE Futures Europe (Londres)
-* **Armazenamento:** Arquivos CSV (Processados na pasta `data/`)
+- **Python 3.10**
+- Pandas, NumPy
+- Seaborn, Matplotlib
+- Statsmodels (Holt-Winters), Scipy
+- Fonte: Yahoo Finance (ICE NY / ICE Europe)
 
 ---
 
-## 🧠 Bastidores: Onde Tudo Começou
-Antes de escrever a primeira linha de código, o projeto foi desenhado no papel.
-Acreditamos que a tecnologia é apenas o meio para resolver problemas de negócio bem definidos. A imagem abaixo registra o planejamento inicial das perguntas estratégicas:
+## 🧠 Planejamento Analítico
+
+O projeto foi estruturado **antes do código**, com definição clara das perguntas de negócio.
 
 <div align="center">
-  <img src="img/caderno_rascunho.jpeg" alt="Rascunho do Planejamento" width="600">
-  <p><em>"Do Rascunho ao Deploy: O roteiro de perguntas que guiou a análise."</em></p>
+  <img src="img/caderno_rascunho.jpeg" width="600">
+  <p><em>Do problema de negócio à modelagem analítica.</em></p>
 </div>
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Execução
+
 ```bash
-# 1. Clone o repositório
-git clone [https://github.com/ArymanReis/strategic-coffee-forecast.git](https://github.com/ArymanReis/strategic-coffee-forecast.git)
-
-# 2. Instale as dependências
+git clone https://github.com/ArymanReis/strategic-coffee-forecast.git
 pip install -r requirements.txt
-
-# 3. Execute os notebooks na ordem numérica
 jupyter notebook
-
-## 🧠 Bastidores: Onde Tudo Começou
-Antes de escrever a primeira linha de código, o projeto foi desenhado no papel.
-Acreditamos que a tecnologia é apenas o meio para resolver problemas de negócio bem definidos. A imagem abaixo registra o planejamento inicial das perguntas estratégicas:
-
-
